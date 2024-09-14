@@ -43,9 +43,8 @@ class MovieListPage extends StatelessWidget {
             itemCount: movies.length,
             itemBuilder: (context, index) {
               final movie = movies[index];
-              double rating = movie.voteAverage /
-                  2; // Converto il rating in una scala da 1 a 5
-              rating = (rating * 2).round() / 2; // Arrotondo a 0.5 più vicino
+              double rating = movie.voteAverage / 2;
+              rating = (rating * 2).round() / 2;
 
               List<Widget> stars = [];
               for (int i = 0; i < 5; i++) {
@@ -66,20 +65,19 @@ class MovieListPage extends StatelessWidget {
                   context.go('/detail/${movie.id}');
                 },
                 child: Card(
-                  // Aggiungo il widget Card
-                  elevation: 0.2, // Imposto l'elevazione per l'effetto rialzato
+                  elevation: 0.2,
                   color: const Color.fromARGB(43, 1, 49, 66),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Container(
-                    height: 150, // Imposto l'altezza del container
+                    height: 150,
                     margin: const EdgeInsets.all(8.0),
                     padding: const EdgeInsets.all(2.0),
                     child: Row(
                       children: <Widget>[
                         SizedBox(
-                          width: 130, // E imposto l'altezza dell'immagine
+                          width: 130,
                           child: movie.posterPath.contains('http')
                               ? Image.network(movie.posterPath,
                                   fit: BoxFit.contain)
