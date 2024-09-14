@@ -48,7 +48,7 @@ Every aspect of Which I Watch, from the UI design to the WIW logo and code, was 
 
 This application uses the TMDB API but is not endorsed or certified by TMDB.
 
-![Logo TMDB](lib/assets/images/themoviedb-credits.svg)
+![Logo TMDB](lib/assets/images/themoviedb-credits.png)
 
 This product uses the TMDB API but is not endorsed or certified by TMDB. We are grateful to [TMDB](https://www.themoviedb.org/) for providing the movie data that powers this app.
 
