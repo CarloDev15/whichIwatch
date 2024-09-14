@@ -1,0 +1,42 @@
+name: which_i_watch
+description: "An app to find out which films you can watch at the cinema."
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: ">=3.2.6 <4.0.0"
+
+dependencies:
+  collection: ^1.18.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.4
+  freezed_annotation: ^2.4.1
+  go_router: ^13.2.0
+  http: ^1.2.0
+  intl: ^0.19.0
+  url_launcher: ^6.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+  build_runner: ^2.4.8
+  freezed: ^2.4.7
+  dart_style: ^2.3.6 # Workaround https://github.com/dart-lang/dart_style/issues/1413
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/images/logo-wiw-splashcreen.png
+    - lib/assets/images/logo-wiw-appbar.png
+    - lib/assets/images/logo-wiw-transparent.png
+    - lib/assets/images/poster-default.png
+    - lib/assets/images/backdrop-default.png
+  fonts:
+    - family: Manrope-ExtraBold
+      fonts:
+        - asset: lib/fonts/Manrope-ExtraBold.ttf
+    - family: Manrope-Medium
+      fonts:
+        - asset: lib/fonts/Manrope-Medium.ttf
